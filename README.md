@@ -33,7 +33,7 @@ Configure Node and Github with the following links: [NodeJS](https://nodejs.org/
 2. **Create a tenant in Cloud Identity**
 Sign up through market place: [IBM Cloud Identity](https://www.ibm.com/us-en/marketplace/cloud-identity)
 3. **Clone this repo on your machine**
-`git clone https://github.ibm.com/ajcase/CIC-OIDCSample`
+`git clone https://github.ibm.com/tweenn/CIC-OIDCSample`
 
 **Note:** If you want to make modifications to the UI, this app is built in the [IBM's Carbon Design System](https://carbondesignsystem.com) using [Vanilla JS](https://the-carbon-components.netlify.com/) patterns.
 
@@ -45,10 +45,10 @@ Following the steps below will ensure you will have a working local OIDC applica
 Go to the IBM Cloud Identity portal and create a new application. Choose the custom application option. In Sign-On Method, choose `Open ID Connect 1.0`.
 
 1.1 **Enter the Application URL**
-By default the Application URL will listen on localhost port 3000. Enter `http://localhost:3000/` in the input field. 
+By default the Application URL will listen on localhost port 4500. Enter `http://localhost:4500/` in the input field. 
 
 1.2 **Enter the Redirect URI**
-The Redirect URI that we will use is `http://localhost:3000/oauth/callback`. 
+The Redirect URI that we will use is `http://localhost:4500/oauth/callback`. 
 
 1.2.1 **Disable PKCE**
 
@@ -75,11 +75,11 @@ Edit this file and save it.
 OIDC_CI_BASE_URI=https://your-tenant-id.ice.ibmcloud.com/oidc/endpoint/default
 OIDC_CLIENT_ID=XXXXXXXX-xxxx-xxxx-xxxx-XXXXXXXXXXXX
 OIDC_CLIENT_SECRET=YYYYYYYYYY
-OIDC_REDIRECT_URI=http://localhost:3000/oauth/callback
+OIDC_REDIRECT_URI=http://localhost:4500/oauth/callback
 ```
 
 # Run the App
 To run the app, run the following command via the terminal:
 `npm start`
 
-This will open a web server hosted on port 3000 at the folllowing address: http://localhost:3000
+This will open a web server hosted on port 4500 at the folllowing address: http://localhost:4500
